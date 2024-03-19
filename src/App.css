@@ -77,11 +77,26 @@ footer {
 
 footer p {
   font-weight: 700;
-  size: 18px;
+  font-size: 1em;
 }
 
 footer a {
   text-decoration: none;
   color: black;
   font-weight: 1200;
+}
+
+@media screen and (max-width: 1024px) {
+  body .container {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  body .container > div {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
